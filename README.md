@@ -18,75 +18,53 @@ We will try to answer the following questions with context to our topic:
 <li>Can we alter the data to reflect inflation costs since 1990?</li>
 </ul>
 
-
+## Data Description
 
 California Housing Dataset has 20640 instances, 8 predictive attributes and the target predictor of numeric data type.
 
 As observed in the following dataset abbreviations, these are the terminologies:
-        - MedInc: median income in block
-        - HouseAge: median house age in block
-        - AveRooms: average number of rooms
-        - AveBedrms: average number of bedrooms
-        - Population: block population
-        - AveOccup: average house occupancy
-        - Latitude: house block latitude
-        - Longitude: house block longitude
-
-No missing data or NULL values found in this dataset.
-
-The target variable is the median house value for California districts.
+<ul>
+<li>MedInc: median income in block</li>
+<li>HouseAge: median house age in block</li>
+<li>AveRooms: average number of rooms</li>
+<li>AveBedrms: average number of bedrooms</li>
+<li>Population: block population</li>
+<li>AveOccup: average house occupancy</li>
+<li>Latitude: house block latitude</li>
+<li>Longitude: house block longitude</li>
+</ul>
 
 This dataset was derived from the 1990 U.S. census, using one row per census
 block group. A block group is the smallest geographical unit for which the U.S.
 Census Bureau publishes sample data (a block group typically has a population
 of 600 to 3,000 people).
 
-Data Processing
-
-We combine the features and responses into a single dataset which we use in the later stages:
- 
-
-We check for outlier data using the boxplot() by seaborn. The outlier data is the one that lies outside the upper limit.
- 
-
+No missing data or NULL values found in this dataset. The target variable is the median house value for California districts.
+We check for outlier data using the boxplot() by seaborn. The outlier data is the one that lies outside the lower & upper limits.
 After dropping 5 records, dataset has 20635 instances
-
 Based on the data collected in 2021, the median housing value is 791,000 or 7.91. We multiply the target values by 4.4 to fill the offset that we use to predict median housing prices in 2021.
 
 
-
-
-
-
-MODEL PLANNING AND IMPLEMENTATION
-
-Proposed Model and Justification
+## Proposed Model and Justification
 
 The California Housing dataset calls for a regression model since the predictive and predictor variables are of numeric data type.
+<br />	-We use StandardScaler, MinMaxScaler and RobustScaler, the scaling technique that produces the best score is used further.
+<br />	-Implement Principal Component Analysis (PCA) on the scaled features to reduce dimensionality of data and prevent low scorers from feature selection. 
+<br />	-Implement Polynomial Features as an alternative to PCA which will be defined in the second scenario.
+<br />	-Once the features are scaled and filtered, records separated into training and testing subsets of dataset with each having their own independent and dependent  variables.
+<br /> -After splitting the dataset into training and testing sets, apply the following regression techniques: Linear Regression, Lasso Regression, Ridge Regression, Decision Tree Regression, Random Forest Regression, Gradient Boost Regressor, MLP Regression.
 
-1)	With the help of predictive variables, we are scaling the model with StandardScaler, MinMaxScaler and RobustScaler. The scaling technique that produces the best score is used further.
-2)	We implement Principal Component Analysis on the scaled features to reduce dimensionality of data and prevent low scorers from feature selection. 
-3)	We will use Polynomial Features as an alternative to PCA which will be defined in the second scenario.
-4)	Once the features are scaled and filtered, it’s separated into training and testing subsets of data with each having their own independent and dependent variables.
-5)	After splitting the dataset into training and testing sets, apply Linear Regression, Ridge Regression and Lasso Regression.
+Modelling aims has the following objectives:
 
-Pipeline
+<ul>
+<li>Data we possess is not relevant and therefore must scale the dependent variable to reflect inflation.</li>
+<li>Model should reduce dimensionality of data, prevent low scorers from feature selection, polishing record classifications with outlier data and pipelining multiple functions to reduce CPU time</li>
+<ul>
 
-Pipelining scaling and feature selection techniques include:
-•	Scaling and PCA
- 
-
-•	Scaling and Polynomial Features
- 
-
-Modelling Objectives
-
-This series of modelling aims to complement the following objectives:
-
-•	Data we possess is not relevant and therefore must scale the dependent variable to reflect inflation.
-•	Model should reduce dimensionality of data, prevent low scorers from feature selection, polishing record classifications with outlier data and pipelining multiple functions to reduce CPU time
-•	Our regression model should evaluate multiple parameters in pursuit of best r2, RMSE and mean accuracy score.
-•	Datasets must be split into training and testing subsets of data with each having their own independent and dependent variables. Meanwhile, out of sample data taken from training set as validation set marks the overall scores.
+<ul>
+<li>Our regression model should evaluate multiple parameters in pursuit of best r2, RMSE and mean accuracy score.
+<li>Datasets must be split into training and testing subsets of data with each having their own independent and dependent variables. Meanwhile, out of sample data taken from training set as validation set marks the overall scores.
+</ul>
 
 
 RESULTS INTERPRETATION AND IMPLICATIONS
@@ -102,9 +80,6 @@ From the Explained Variance Ratio, we see that
 4th variable 0.01% of the total variance
 which means that 0.01 is lost.
 
-
-
-
 Best model we obtain from Prediction with PCA:
 
 Best model Training R2 score: 57.85%
@@ -112,19 +87,12 @@ Best model Testing R2 score: 54.04%
 Best RMSE score: 3.42
 Best Average CV score: 0.55
 
- 
-
-
-
-
 Best model we obtain from Prediction with Polynomial Features:
 
 Best model Training R2 score: 80.84%
 Best model Testing R2 score: 78.42%
 Best RMSE score: 2.34
 Best Average CV score: 0.78
-
- 
 
 Assessment
 
@@ -146,8 +114,7 @@ Validation R2 score: 78.10%
 Validation RMSE score 2.37
 Average CV score: 0.79
  
-
-CONCLUDING REMARKS
+## Concluding Remarks
 
 -	Prediction: We can predict with adequate accuracy the median housing prices for year 2021
 -	Outlier data: The dataset contains more outliers that caused the predictions to drop when removed
