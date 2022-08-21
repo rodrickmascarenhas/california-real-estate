@@ -1,24 +1,22 @@
 # California_Housing_Price_FY21
 (project tasked by ML Professor)
 
-INTRODUCTION AND DISCOVERY
+## Goals / Objectives
 
 Our California Housing dataset suggests the median housing prices for the year 1990 during which the U.S Census Bureau was responsible for housing data. In this report, we discover how well our model manages when the same data can be used to predict today’s median price for each block group. In doing so, the model can differentiate between different block groups, disseminate essential information to investors and predict concurrent datasets given the independent variables.
 
-We will use libraries like Scikit Learn, Pandas, NumPy and Matplotlib to define our data and build a training model with which we can provide best accuracy to find housing prices for unseen data. The study involves the usage of regression techniques to predict continuous data from a dataset.
+sklearn(Scikit Learn): to invoke the necessary libraries for complex data processing
+pandas: performing basic IO operations with dataframing capabilities
+NumPy: to perform complex mathematical operations on array datasets
+Matplotlib: to plot visualizations for exploratory / predictive model building to define our data and build a model which can provide best accuracy to find housing prices for unseen data. The study involves the usage of regression techniques to predict continuous data from our dataset.
 
-Framing the Problem
-
-	What is the inflation rate from 1990 to 2021?
-	Can we determine median housing price based on independent factors?
-	Is the change in California Housing prices following linear relationship?
-	Can we alter the data to reflect inflation costs since 1990?
-
-Developing Hypotheses
-
-	We assume that the dataset contains features and target variables that are linearly related to one another.
-	Based on the median housing price recorded in 2021, it has increased by 4.4 times its original value. Thus, we increase the target values by 4.4 times to a mean of 7.91 or 790,000.
-
+We will try to answer the following questions with context to our topic:
+<ul>
+<li>What is the inflation rate from 1990 to 2021?</li>
+<li>Can we determine median housing price based on independent factors?</li>
+<li>Is the change in California Housing prices following linear relationship?</li>
+<li>Can we alter the data to reflect inflation costs since 1990?</li>
+</ul>
 
 
 
