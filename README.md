@@ -39,6 +39,13 @@ of 600 to 3,000 people).
 
 ![countplot](https://user-images.githubusercontent.com/30309234/185981849-16e32db6-eaca-4414-9c3d-1530bf604a32.png)
 
+<i size="4">We see that median house prices and  median incomes are having positive linear relationship</i>
+
+![med_house_val_cooordinate](https://user-images.githubusercontent.com/30309234/185982814-550ad1cb-5a4d-4278-a598-f5101bfe62da.png)
+
+<i size="4">With the help of scatterplot we can see that housing prices are related to the latitude and logitude (location) of the property. Here the color represents the price of the house</i>
+
+
 No missing data or NULL values found in this dataset. The target variable is the median house value for California districts.
 We check for outlier data using the boxplot() by seaborn. The outlier data is the one that lies outside the lower & upper limits.
 After dropping 5 records, dataset has 20635 instances
@@ -65,15 +72,6 @@ Modelling aims has the following objectives:
 RESULTS INTERPRETATION AND IMPLICATIONS
 
 Plots and Summary Tables
-
-![med_house_v_income_scatter](https://user-images.githubusercontent.com/30309234/185982067-00aa90b9-4353-4148-9045-858e2d6023d7.png)
-
-<i h=0.7>We see that median house prices and  median incomes are having positive linear relationship</i>
-
-![med_house_val_cooordinate](https://user-images.githubusercontent.com/30309234/185982814-550ad1cb-5a4d-4278-a598-f5101bfe62da.png)
-
-<i h=0.7>With the help of scatterplot we can see that housing prices are related to the latitude and logitude (location) of the property. Here the color represents the price of the house</i>
-
 We see the results for the cumulative sum of variances of scaled features with respect to number of dimensions.
 
 From the Explained Variance Ratio, we see that 
