@@ -37,6 +37,8 @@ block group. A block group is the smallest geographical unit for which the U.S.
 Census Bureau publishes sample data (a block group typically has a population
 of 600 to 3,000 people).
 
+![countplot](https://user-images.githubusercontent.com/30309234/185981849-16e32db6-eaca-4414-9c3d-1530bf604a32.png)
+
 No missing data or NULL values found in this dataset. The target variable is the median house value for California districts.
 We check for outlier data using the boxplot() by seaborn. The outlier data is the one that lies outside the lower & upper limits.
 After dropping 5 records, dataset has 20635 instances
@@ -63,6 +65,10 @@ Modelling aims has the following objectives:
 RESULTS INTERPRETATION AND IMPLICATIONS
 
 Plots and Summary Tables
+
+![med_house_v_income_scatter](https://user-images.githubusercontent.com/30309234/185982067-00aa90b9-4353-4148-9045-858e2d6023d7.png)
+
+![med_house_val_cooordinate](https://user-images.githubusercontent.com/30309234/185982090-3c8994c7-118d-4ccd-bc01-55e9c49ccd2d.png)
 
 We see the results for the cumulative sum of variances of scaled features with respect to number of dimensions.
 
