@@ -5,10 +5,10 @@
 
 Our California Housing dataset suggests the median housing prices for the year 1990 during which the U.S Census Bureau was responsible for housing data. In this report, we discover how well our model manages when the same data can be used to predict today’s median price for each block group. In doing so, the model can differentiate between different block groups, disseminate essential information to investors and predict concurrent datasets given the independent variables.
 
-sklearn(Scikit Learn): to invoke the necessary libraries for complex data processing
-pandas: performing basic IO operations with dataframing capabilities
-NumPy: to perform complex mathematical operations on array datasets
-Matplotlib: to plot visualizations for exploratory / predictive model building to define our data and build a model which can provide best accuracy to find housing prices for unseen data. The study involves the usage of regression techniques to predict continuous data from our dataset.
+<b>sklearn(Scikit Learn):<b> to invoke the necessary libraries for complex data processing
+<br /><b>pandas:</b> performing basic IO operations with dataframing capabilities
+<br /><b>NumPy:</b> to perform complex mathematical operations on array datasets
+<br /><b>Matplotlib:</b> to plot visualizations for explanatory / predictive model building to define our data and build a model which can provide best accuracy to find housing prices for unseen data. The study involves the usage of regression techniques to predict continuous data from our dataset.
 
 We will try to answer the following questions with context to our topic:
 <ul>
