@@ -68,7 +68,11 @@ Plots and Summary Tables
 
 ![med_house_v_income_scatter](https://user-images.githubusercontent.com/30309234/185982067-00aa90b9-4353-4148-9045-858e2d6023d7.png)
 
-![med_house_val_cooordinate](https://user-images.githubusercontent.com/30309234/185982090-3c8994c7-118d-4ccd-bc01-55e9c49ccd2d.png)
+<i color="grey">We see that median house prices and  median incomes are having positive linear relationship</i>
+
+![med_house_val_cooordinate](https://user-images.githubusercontent.com/30309234/185982814-550ad1cb-5a4d-4278-a598-f5101bfe62da.png)
+
+<i color="grey">With the help of scatterplot we can see that housing prices are related to the latitude and logitude (location) of the property. Here the color represents the price of the house</i>
 
 We see the results for the cumulative sum of variances of scaled features with respect to number of dimensions.
 
