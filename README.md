@@ -5,8 +5,8 @@ California Housing dataset suggests the median housing prices for the year 1990 
 
 <b>sklearn(Scikit Learn):</b> to invoke the necessary libraries for complex data processing
 <br /><b>pandas:</b> performing basic IO operations with dataframing capabilities
-<br /><b>NumPy:</b> to perform complex mathematical operations on array datasets
-<br /><b>Matplotlib:</b> to plot visualizations for explanatory / predictive model building to define our data and build a model which can provide best accuracy to find housing prices for unseen data. The study involves the usage of regression techniques to predict continuous data from our dataset.
+<br /><b>numPy:</b> to perform complex mathematical operations on array datasets
+<br /><b>matplotlib:</b> to plot visualizations for explanatory / predictive model building to define our data and build a model which can provide best accuracy to find housing prices for unseen data. The study involves the usage of regression techniques to predict continuous data from our dataset.
 
 We will try to answer the following questions with context to our topic:
 <ul>
