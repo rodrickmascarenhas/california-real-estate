@@ -1,8 +1,7 @@
 # California_Housing_Price_FY21
 
-## Goals / Objectives
 
-Our California Housing dataset suggests the median housing prices for the year 1990 during which the U.S Census Bureau was responsible for housing data. In this report, we discover how well our model manages when the same data can be used to predict today’s median price for each block group. In doing so, the model can differentiate between different block groups, disseminate essential information to investors and predict concurrent datasets given the independent variables.
+California Housing dataset suggests the median housing prices for the year 1990 during which the U.S Census Bureau was responsible for housing data. In this report, we discover how well our model manages when the same data can be used to predict today’s median price for each block group. In doing so, the model can differentiate between different block groups, disseminate essential information to investors and predict concurrent datasets given the independent variables.
 
 <b>sklearn(Scikit Learn):<b> to invoke the necessary libraries for complex data processing
 <br /><b>pandas:</b> performing basic IO operations with dataframing capabilities
@@ -46,7 +45,6 @@ Based on the data collected in 2021, the median housing value is 791,000 or 7.91
 
 ## Proposed Model and Justification
 
-The California Housing dataset calls for a regression model since the predictive and predictor variables are of numeric data type.
 <br />	-We use StandardScaler, MinMaxScaler and RobustScaler, the scaling technique that produces the best score is used further.
 <br />	-Implement Principal Component Analysis (PCA) on the scaled features to reduce dimensionality of data and prevent low scorers from feature selection. 
 <br />	-Implement Polynomial Features as an alternative to PCA which will be defined in the second scenario.
@@ -54,13 +52,9 @@ The California Housing dataset calls for a regression model since the predictive
 <br /> -After splitting the dataset into training and testing sets, apply the following regression techniques: Linear Regression, Lasso Regression, Ridge Regression, Decision Tree Regression, Random Forest Regression, Gradient Boost Regressor, MLP Regression.
 
 Modelling aims has the following objectives:
-
 <ul>
 <li>Data we possess is not relevant and therefore must scale the dependent variable to reflect inflation.</li>
 <li>Model should reduce dimensionality of data, prevent low scorers from feature selection, polishing record classifications with outlier data and pipelining multiple functions to reduce CPU time</li>
-<ul>
-
-<ul>
 <li>Our regression model should evaluate multiple parameters in pursuit of best r2, RMSE and mean accuracy score.
 <li>Datasets must be split into training and testing subsets of data with each having their own independent and dependent variables. Meanwhile, out of sample data taken from training set as validation set marks the overall scores.
 </ul>
