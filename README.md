@@ -76,8 +76,7 @@ We see the results for the cumulative sum of variances of scaled features with r
 
 ![cum_var](https://user-images.githubusercontent.com/30309234/185987896-e6207200-2cae-41a5-90f0-9c8fc1a82d9d.png)
 
-From the Explained Variance Ratio, we see that ![pca](https://user-images.githubusercontent.com/30309234/185988024-6dbc13b2-dc09-4b3e-a011-d69089a77327.png)
-
+From the Explained Variance Ratio, we see that 
 1st variable explains 0.83%
 2nd variable explains 0.15%
 3rd variable 0.01%
@@ -92,7 +91,6 @@ Best RMSE score: 3.42
 Best Average CV score: 0.55
 
 ![pca](https://user-images.githubusercontent.com/30309234/185988071-6cb3f62f-e56c-4846-b1cc-bbe1a012dfaa.png)
-
 
 Best model we obtain from Prediction with Polynomial Features:
 
