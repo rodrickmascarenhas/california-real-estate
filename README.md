@@ -39,11 +39,11 @@ of 600 to 3,000 people).
 
 ![countplot](https://user-images.githubusercontent.com/30309234/185981849-16e32db6-eaca-4414-9c3d-1530bf604a32.png)
 
-<i size="4">We see that median house prices and  median incomes are having positive linear relationship</i>
+<i size=4>We see that median house prices and  median incomes are having positive linear relationship</i>
 
 ![med_house_val_cooordinate](https://user-images.githubusercontent.com/30309234/185982814-550ad1cb-5a4d-4278-a598-f5101bfe62da.png)
 
-<i size="4">With the help of scatterplot we can see that housing prices are related to the latitude and logitude (location) of the property. Here the color represents the price of the house</i>
+<i size=4>With the help of scatterplot we can see that housing prices are related to the latitude and logitude (location) of the property. Here the color represents the price of the house</i>
 
 
 No missing data or NULL values found in this dataset. The target variable is the median house value for California districts.
@@ -74,7 +74,10 @@ RESULTS INTERPRETATION AND IMPLICATIONS
 Plots and Summary Tables
 We see the results for the cumulative sum of variances of scaled features with respect to number of dimensions.
 
-From the Explained Variance Ratio, we see that 
+![cum_var](https://user-images.githubusercontent.com/30309234/185987896-e6207200-2cae-41a5-90f0-9c8fc1a82d9d.png)
+
+From the Explained Variance Ratio, we see that ![pca](https://user-images.githubusercontent.com/30309234/185988024-6dbc13b2-dc09-4b3e-a011-d69089a77327.png)
+
 1st variable explains 0.83%
 2nd variable explains 0.15%
 3rd variable 0.01%
@@ -88,12 +91,17 @@ Best model Testing R2 score: 54.04%
 Best RMSE score: 3.42
 Best Average CV score: 0.55
 
+![pca](https://user-images.githubusercontent.com/30309234/185988071-6cb3f62f-e56c-4846-b1cc-bbe1a012dfaa.png)
+
+
 Best model we obtain from Prediction with Polynomial Features:
 
 Best model Training R2 score: 80.84%
 Best model Testing R2 score: 78.42%
 Best RMSE score: 2.34
 Best Average CV score: 0.78
+
+![poly_feat](https://user-images.githubusercontent.com/30309234/185988050-b49e5e8f-9791-432c-bcc4-6725bf2cd9d5.png)
 
 Assessment
 
@@ -114,6 +122,10 @@ Training R2 score: 80.84%
 Validation R2 score: 78.10%
 Validation RMSE score 2.37
 Average CV score: 0.79
+
+![out-of-sample](https://user-images.githubusercontent.com/30309234/185988106-2c864dcd-5d1a-4d2a-9486-3c9e3b4f8adc.png)
+
+From the results shown, we will conclude saying our model can predict results with 79% accuracy and is prone to underfitting. 
  
 ## Concluding Remarks
 
