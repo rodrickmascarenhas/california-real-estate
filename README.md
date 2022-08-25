@@ -114,7 +114,7 @@ OUT-OF-SAMPLE PREDICTIONS
 
 Final Model Prediction on Out-of-Sample dataset
 
-Our model can predict data for out-of-sample dataset with a mean accuracy score of 60%.
+Our model can predict data for out-of-sample dataset with a mean accuracy score of 79%.
 
 Training R2 score: 80.84%
 Validation R2 score: 78.10%
