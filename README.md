@@ -9,12 +9,11 @@ California Housing dataset suggests the median housing prices for the year 1990 
 <br /><b>matplotlib:</b> to plot visualizations for explanatory / predictive model building to define our data and build a model which can provide best accuracy to find housing prices for unseen data. The study involves the usage of regression techniques to predict continuous data from our dataset.
 
 We will try to answer the following questions with context to our topic:
-<ul>
-<li>What is the inflation rate from 1990 to 2021?</li>
-<li>Can we determine median housing price based on independent factors?</li>
-<li>Is the change in California Housing prices following linear relationship?</li>
-<li>Can we alter the data to reflect inflation costs since 1990?</li>
-</ul>
+<br />What is the inflation rate from 1990 to 2021?</li>
+<br />Can we determine median housing price based on independent factors?
+<br />Is the change in California Housing prices following linear relationship?
+<br />Can we alter the data to reflect inflation costs since 1990?
+<br />
 
 ## Data Description
 
