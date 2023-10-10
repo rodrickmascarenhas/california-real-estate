@@ -64,8 +64,8 @@ Modelling aims has the following objectives:
 <ul>
 <li>Data we possess is not relevant and therefore must scale the dependent variable to reflect inflation.</li>
 <li>Model should reduce dimensionality of data, prevent low scorers from feature selection, polishing record classifications with outlier data and pipelining multiple functions to reduce CPU time</li>
-<li>Our regression model should evaluate multiple parameters in pursuit of best r2, RMSE and mean accuracy score.
-<li>Datasets must be split into training and testing subsets of data with each having their own independent and dependent variables. Meanwhile, out of sample data taken from training set as validation set marks the overall scores.
+<li>Our regression model should evaluate multiple parameters in pursuit of best r2, RMSE and mean accuracy score.</li>
+<li>Datasets must be split into training and testing subsets of data with each having their own independent and dependent variables. Meanwhile, out of sample data taken from training set as validation set marks the overall scores.</li>
 </ul>
 
 
@@ -79,7 +79,7 @@ We see the results for the cumulative sum of variances of scaled features with r
 From the Explained Variance Ratio, we see that 
 <ul>
 <li>1st variable explains 0.83%</li>
-<li></li>2nd variable explains 0.15%</li>
+<li>2nd variable explains 0.15%</li>
 <li>3rd variable 0.01%</li>
 <li>4th variable 0.01% of the total variance</li>
 <li>which means that 0.01 is lost.</li>
@@ -96,12 +96,13 @@ Best model we obtain from Prediction with PCA:
 ![pca](https://user-images.githubusercontent.com/30309234/185988071-6cb3f62f-e56c-4846-b1cc-bbe1a012dfaa.png)
 
 Best model we obtain from Prediction with Polynomial Features:
-
-<br>Best model Training R2 score: 80.84%
-<br>Best model Testing R2 score: 78.42%
-<br>Best RMSE score: 2.34
-<br>Best Average CV score: 0.78
-
+<ul>
+<li>Best model Training R2 score: 80.84%</li>
+<<li>>Best model Testing R2 score: 78.42%</li>
+<<li>>Best RMSE score: 2.34</li>
+<<li>>Best Average CV score: 0.78</li>
+</ul>
+ 
 ![poly_feat](https://user-images.githubusercontent.com/30309234/185988050-b49e5e8f-9791-432c-bcc4-6725bf2cd9d5.png)
 
 Assessment
