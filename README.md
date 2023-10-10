@@ -77,18 +77,21 @@ We see the results for the cumulative sum of variances of scaled features with r
 ![cum_var](https://user-images.githubusercontent.com/30309234/185987896-e6207200-2cae-41a5-90f0-9c8fc1a82d9d.png)
 
 From the Explained Variance Ratio, we see that 
-1st variable explains 0.83%
-2nd variable explains 0.15%
-3rd variable 0.01%
-4th variable 0.01% of the total variance
-which means that 0.01 is lost.
+<ul>
+<li>1st variable explains 0.83%</li>
+<li></li>2nd variable explains 0.15%</li>
+<li>3rd variable 0.01%</li>
+<li>4th variable 0.01% of the total variance</li>
+<li>which means that 0.01 is lost.</li>
+</ul>
 
 Best model we obtain from Prediction with PCA:
-
-<br>Best model Training R2 score: 57.85%
-<br>Best model Testing R2 score: 54.04%
-<br>Best RMSE score: 3.42
-<br>Best Average CV score: 0.55
+<ul>
+<li>Best model Training R2 score: 57.85%</li>
+<li>Best model Testing R2 score: 54.04%</li>
+<li>Best RMSE score: 3.42</li>
+<li>Best Average CV score: 0.55</li>
+</ul>
 
 ![pca](https://user-images.githubusercontent.com/30309234/185988071-6cb3f62f-e56c-4846-b1cc-bbe1a012dfaa.png)
 
