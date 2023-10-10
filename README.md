@@ -85,19 +85,19 @@ which means that 0.01 is lost.
 
 Best model we obtain from Prediction with PCA:
 
-Best model Training R2 score: 57.85%
-Best model Testing R2 score: 54.04%
-Best RMSE score: 3.42
-Best Average CV score: 0.55
+<br>Best model Training R2 score: 57.85%
+<br>Best model Testing R2 score: 54.04%
+<br>Best RMSE score: 3.42
+<br>Best Average CV score: 0.55
 
 ![pca](https://user-images.githubusercontent.com/30309234/185988071-6cb3f62f-e56c-4846-b1cc-bbe1a012dfaa.png)
 
 Best model we obtain from Prediction with Polynomial Features:
 
-Best model Training R2 score: 80.84%
-Best model Testing R2 score: 78.42%
-Best RMSE score: 2.34
-Best Average CV score: 0.78
+<br>Best model Training R2 score: 80.84%
+<br>Best model Testing R2 score: 78.42%
+<br>Best RMSE score: 2.34
+<br>Best Average CV score: 0.78
 
 ![poly_feat](https://user-images.githubusercontent.com/30309234/185988050-b49e5e8f-9791-432c-bcc4-6725bf2cd9d5.png)
 
