@@ -54,11 +54,11 @@ Based on the data collected in 2021, the median housing value is 791,000 or 7.91
 
 ## Proposed Model and Justification
 
-<br />	-We use StandardScaler, MinMaxScaler and RobustScaler, the scaling technique that produces the best score is used further.
-<br />	-Implement Principal Component Analysis (PCA) on the scaled features to reduce dimensionality of data and prevent low scorers from feature selection. 
-<br />	-Implement Polynomial Features as an alternative to PCA which will be defined in the second scenario.
-<br />	-Once the features are scaled and filtered, records separated into training and testing subsets of dataset with each having their own independent and dependent  variables.
-<br /> -After splitting the dataset into training and testing sets, apply the following regression techniques: Linear Regression, Lasso Regression, Ridge Regression, Decision Tree Regression, Random Forest Regression, Gradient Boost Regressor, MLP Regression.
+<br />	We use StandardScaler, MinMaxScaler and RobustScaler, the scaling technique that produces the best score is used further.
+<br />	Implement Principal Component Analysis (PCA) on the scaled features to reduce dimensionality of data and prevent low scorers from feature selection. 
+<br />	Implement Polynomial Features as an alternative to PCA which will be defined in the second scenario.
+<br />	Once the features are scaled and filtered, records separated into training and testing subsets of dataset with each having their own independent and dependent  variables.
+<br /> After splitting the dataset into training and testing sets, apply the following regression techniques: Linear Regression, Lasso Regression, Ridge Regression, Decision Tree Regression, Random Forest Regression, Gradient Boost Regressor, MLP Regression.
 
 Modelling aims has the following objectives:
 <ul>
