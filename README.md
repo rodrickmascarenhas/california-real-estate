@@ -41,6 +41,20 @@ of 600 to 3,000 people).
 
 No missing values were found in this dataset. The target variable is the median house value for California districts.
 We check for outlier data using the boxplot() by seaborn. The outlier data is the one that lies outside the lower & upper limits.
+
+```python
+for i in dataset.columns:
+    plt.figure(figsize=(4,5))
+    plt.title(i)
+    plt.boxplot(dataset[i])
+    plt.show()
+```
+
+# checking for outliers
+outliers = dataset[(dataset["MedInc"]>8)&(dataset["AveRooms"]>9)&(dataset["AveBedrms"]>1.25)
+                   &(dataset["MedHouseVal"]>21)]
+
+print("\nOutliers",outliers.count().unique())
 After dropping 5 records, dataset has 20635 instances
 Based on the data collected in 2021, the median housing value is 791,000 or 7.91. We multiply the target values by 4.4 to fill the offset that we use to predict median housing prices in 2021.
 
