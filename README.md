@@ -8,7 +8,7 @@ California Housing dataset suggests the median housing prices for the year 1990 
 <br /><b>Matplotlib:</b> to plot visualizations for explanatory / predictive model building to define our data and build a model which can provide best accuracy to find housing prices for unseen data. The study involves the usage of regression techniques to predict continuous data from our dataset.
 
 We will try to answer the following questions with context to our topic:
-<br />What is the inflation rate from 1990 to 2021?</li>
+<br />What is the inflation rate from 1990 to 2021?
 <br />Can we determine median housing price based on independent factors?
 <br />Is the change in California Housing prices following linear relationship?
 <br />Can we alter the data to reflect inflation costs since 1990?
@@ -44,7 +44,7 @@ of 600 to 3,000 people).
 <i size=4>With the help of scatterplot we can see that housing prices are related to the latitude and logitude (location) of the property. Here the color represents the price of the house</i>
 
 
-No missing data or NULL values found in this dataset. The target variable is the median house value for California districts.
+No missing values were found in this dataset. The target variable is the median house value for California districts.
 We check for outlier data using the boxplot() by seaborn. The outlier data is the one that lies outside the lower & upper limits.
 After dropping 5 records, dataset has 20635 instances
 Based on the data collected in 2021, the median housing value is 791,000 or 7.91. We multiply the target values by 4.4 to fill the offset that we use to predict median housing prices in 2021.
@@ -95,7 +95,7 @@ Best model we obtain from Prediction with PCA:
 Best model we obtain from Prediction with Polynomial Features:
 <ul>
 <li>Best model Training R2 score: 80.84%</li>
-<<li>>Best model Testing R2 score: 78.42%</li>
+<li>Best model Testing R2 score: 78.42%</li>
 <li>Best RMSE score: 2.34</li>
 <li>Best Average CV score: 0.78</li>
 </ul>
