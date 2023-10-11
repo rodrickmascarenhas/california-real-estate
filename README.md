@@ -152,4 +152,4 @@ From the results shown, we will conclude saying our model can predict results wi
 -	Prediction: We can predict with adequate accuracy the median housing prices for year 2021
 -	Outlier data: The dataset contains more outliers that caused the predictions to drop when removed
 -	Insufficient data: More records are necessary achieve higher mean accuracy and reduce variance
--	Inconsistent data: Dataset used was published in 1990 and has been adjusted to reflect some inflation
+-	Inconsistent data: Dataset published in 1990 has been adjusted to reflect some inflation
