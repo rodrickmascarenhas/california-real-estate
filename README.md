@@ -66,7 +66,7 @@ for i in dataset.columns:
     plt.show()
 ```
 
-# checking for outliers
+### checking for outliers
 
 ```python
 outliers = dataset[(dataset["MedInc"]>8)&(dataset["AveRooms"]>9)&(dataset["AveBedrms"]>1.25)&(dataset["MedHouseVal"]>21)]
