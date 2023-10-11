@@ -30,7 +30,7 @@ block group. A block group is the smallest geographical unit for which the U.S.
 Census Bureau publishes sample data (a block group typically has a population
 of 600 to 3,000 people).
 
-![countplot](https://user-images.githubusercontent.com/30309234/185981849-16e32db6-eaca-4414-9c3d-1530bf604a32.png)
+![scatter](https://github.com/rodrickmascarenhas/california-real-estate/assets/30309234/699b436a-9dac-47c5-9cb6-0057eabb739b)
 
 <i size=4>We see that median house prices and  median incomes are having positive linear relationship</i>
 
@@ -42,11 +42,11 @@ of 600 to 3,000 people).
 # dataset for features and pricing
 dataset = pd.DataFrame(df.data,columns=df.feature_names)
 dataset["MedHouseVal"] = df.target
-
-print(dataset)
 ```
 
 No missing values were found in this dataset. The target variable is the median house value for California districts.
+
+Adjusting for inflation in 2021.
 
 ```python
 # multiplying target values by 4.4
@@ -69,9 +69,7 @@ for i in dataset.columns:
 ```python
 outliers = dataset[(dataset["MedInc"]>8)&(dataset["AveRooms"]>9)&(dataset["AveBedrms"]>1.25)&(dataset["MedHouseVal"]>21)]
 ```
-
 After dropping 5 records, dataset has 20635 instances
-Based on the data collected in 2021, the median housing value is 791,000 or 7.91. We multiply the target values by 4.4 to fill the offset that we use to predict median housing prices in 2021.
 
 ## Proposed Model and Justification
 
@@ -88,7 +86,6 @@ Modelling aims has the following objectives:
 <li>Our regression model should evaluate multiple parameters in pursuit of best r2, RMSE and mean accuracy score.</li>
 <li>Datasets must be split into training and testing subsets of data with each having their own independent and dependent variables. Meanwhile, out of sample data taken from training set as validation set marks the overall scores.</li>
 </ul>
-
 
 ## Results
 
@@ -135,7 +132,7 @@ Assessment
 -	The best model can predict data for our testing set with a mean accuracy score of 65%
 -	We can achieve a better score with Polynomial Features than PCA, therefore, the target variable could be defined into a polynomial function with predictive variables to a degree of 2.
 
-Final Model Prediction on Out-of-Sample dataset
+Final model prediction on Out-of-Sample dataset
 
 Our model can predict data for out-of-sample dataset with a mean accuracy score of 79%.
 
