@@ -1,4 +1,4 @@
-# California Housing Prices
+## California Housing Prices
 
 California Housing dataset suggests the median housing prices for the year 1990 during which the U.S Census Bureau was responsible for housing data. In this report, we discover how well our model manages when the same data can be used to predict today’s median price for each block group. In doing so, the model can differentiate between different block groups, disseminate essential information to investors and predict concurrent datasets given the independent variables.
 
@@ -66,7 +66,7 @@ Modelling aims has the following objectives:
 </ul>
 
 
-RESULTS INTERPRETATION AND IMPLICATIONS
+## Results
 
 Plots and Summary Tables
 We see the results for the cumulative sum of variances of scaled features with respect to number of dimensions.
