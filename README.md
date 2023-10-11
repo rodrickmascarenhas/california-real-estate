@@ -82,7 +82,7 @@ Best model we obtain from Prediction with PCA:
 <li>Best model Training R2 score: 57.85%</li>
 <li>Best model Testing R2 score: 54.04%</li>
 <li>Best RMSE score: 3.42</li>
-<li>Best Average CV score: 0.55</li>
+<li>Best Average CV score: 55%</li>
 </ul>
 
 ![pca](https://user-images.githubusercontent.com/30309234/185988071-6cb3f62f-e56c-4846-b1cc-bbe1a012dfaa.png)
@@ -92,7 +92,7 @@ Best model we obtain from Prediction with Polynomial Features:
 <li>Best model Training R2 score: 80.84%</li>
 <li>Best model Testing R2 score: 78.42%</li>
 <li>Best RMSE score: 2.34</li>
-<li>Best Average CV score: 0.78</li>
+<li>Best Average CV score: 78%</li>
 </ul>
  
 ![poly_feat](https://user-images.githubusercontent.com/30309234/185988050-b49e5e8f-9791-432c-bcc4-6725bf2cd9d5.png)
@@ -113,7 +113,7 @@ Our model can predict data for out-of-sample dataset with a mean accuracy score 
 Training R2 score: 80.84%
 Validation R2 score: 78.10%
 Validation RMSE score 2.37
-Average CV score: 0.79
+Average CV score: 79%
 
 ![out-of-sample](https://user-images.githubusercontent.com/30309234/185988106-2c864dcd-5d1a-4d2a-9486-3c9e3b4f8adc.png)
 
