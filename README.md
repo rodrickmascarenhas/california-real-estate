@@ -1,6 +1,5 @@
 # California Housing Prices
 
-
 California Housing dataset suggests the median housing prices for the year 1990 during which the U.S Census Bureau was responsible for housing data. In this report, we discover how well our model manages when the same data can be used to predict today’s median price for each block group. In doing so, the model can differentiate between different block groups, disseminate essential information to investors and predict concurrent datasets given the independent variables.
 
 <b>Scikit-learn:</b> to invoke the necessary libraries for complex data processing
@@ -50,7 +49,6 @@ We check for outlier data using the boxplot() by seaborn. The outlier data is th
 After dropping 5 records, dataset has 20635 instances
 Based on the data collected in 2021, the median housing value is 791,000 or 7.91. We multiply the target values by 4.4 to fill the offset that we use to predict median housing prices in 2021.
 
-
 ## Proposed Model and Justification
 
 <br />	We use StandardScaler, MinMaxScaler and RobustScaler, the scaling technique that produces the best score is used further.
@@ -98,8 +96,8 @@ Best model we obtain from Prediction with Polynomial Features:
 <ul>
 <li>Best model Training R2 score: 80.84%</li>
 <<li>>Best model Testing R2 score: 78.42%</li>
-<<li>>Best RMSE score: 2.34</li>
-<<li>>Best Average CV score: 0.78</li>
+<li>Best RMSE score: 2.34</li>
+<li>Best Average CV score: 0.78</li>
 </ul>
  
 ![poly_feat](https://user-images.githubusercontent.com/30309234/185988050-b49e5e8f-9791-432c-bcc4-6725bf2cd9d5.png)
@@ -112,8 +110,6 @@ Assessment
 -	α parameter values define the regularization term weight associated with the model. Defining multiple parameter values increases chance of best mean accuracy score.
 -	The best model can predict data for our testing set with a mean accuracy score of 65%
 -	We can achieve a better score with Polynomial Features than PCA, therefore, the target variable could be defined into a polynomial function with predictive variables to a degree of 2.
-
-OUT-OF-SAMPLE PREDICTIONS
 
 Final Model Prediction on Out-of-Sample dataset
 
