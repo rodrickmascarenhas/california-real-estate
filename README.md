@@ -51,7 +51,6 @@ No missing values were found in this dataset. The target variable is the median 
 ```python
 # multiplying target values by 4.4
 dataset["MedHouseVal"] = dataset["MedHouseVal"] * 4.4
-print("Corrected Median value: %.2f"%(np.median(dataset["MedHouseVal"])))
 ```
 
 We check for outlier data using the boxplot() by seaborn. The outlier data is the one that lies outside the lower & upper limits.
@@ -69,7 +68,6 @@ for i in dataset.columns:
 
 ```python
 outliers = dataset[(dataset["MedInc"]>8)&(dataset["AveRooms"]>9)&(dataset["AveBedrms"]>1.25)&(dataset["MedHouseVal"]>21)]
-print("\nOutliers",outliers.count().unique())
 ```
 
 After dropping 5 records, dataset has 20635 instances
