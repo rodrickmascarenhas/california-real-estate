@@ -34,6 +34,8 @@ of 600 to 3,000 people).
 
 We see that median house prices and  median incomes are having positive linear relationship
 
+![pairplot](https://github.com/rodrickmascarenhas/california-real-estate/assets/30309234/e4fbe427-ccf0-4bf4-add8-d648575e46a5)
+
 ![med_house_val_cooordinate](https://user-images.githubusercontent.com/30309234/185982814-550ad1cb-5a4d-4278-a598-f5101bfe62da.png)
 
 With the help of scatterplot we can see that housing prices are related to the latitude and logitude (location) of the property. Here the color represents the price of the house
